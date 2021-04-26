@@ -30,6 +30,10 @@ public class Courier extends  Person{
     public String toString() {
         return "Courier{" +
                 "courierId='" + courierId + '\'' +
+                "name='" + getName() + '\'' +
+                "age='" + getAge() + '\'' +
+                "sex='" + getSex() + '\'' +
+                "pwd='" + getPwd() + '\'' +
                 '}';
     }
 }

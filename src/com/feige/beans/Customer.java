@@ -23,7 +23,7 @@ public class Customer extends Person {
         return "Customer{" +
                 "customerId='" + customerId + '\'' +
                 ", phone='" + phone + '\'' +
-                '}';
+                "} " + super.toString();
     }
 
     public String getCustomerId() {
