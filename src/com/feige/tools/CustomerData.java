@@ -20,6 +20,8 @@ public class CustomerData {
             if ( null == CUSTOMERDATA[i] ) {
                 CUSTOMERDATA[i] = customer;
                 COUNT++;
+                System.out.println("保存成功");
+                break;
             }
         }
 
@@ -44,9 +46,12 @@ public class CustomerData {
         }
         return null;*/
         for ( Customer c : CUSTOMERDATA ) {
-            if ( customerId.equals(c.getCustomerId()) && pwd.equals(c.getPwd()) ) {
-                return c;
+            if ( c != null ) {
+                if ( c.getCustomerId().equals(customerId) && pwd.equals(c.getPwd()) ) {
+                    return c;
+                }
             }
+
         }
         return null;
     }

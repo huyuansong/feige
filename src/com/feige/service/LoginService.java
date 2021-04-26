@@ -36,6 +36,7 @@ public class LoginService {
             return; // 提前中断程序
         }
         // 找到用户，进入对应的功能
+        System.out.println("成功查询到用户");
         new CustomerService(scanner, id).menu();
 
     }
